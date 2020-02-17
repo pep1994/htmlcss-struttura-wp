@@ -1,0 +1,161 @@
+/* general */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/sfondo.png);
+}
+
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main {
+  margin: 0 10px;
+}
+
+main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* header */
+header {
+  /* debug */
+  height: 300px;
+  background-color: yellow;
+  border: solid 1px black;
+  position: relative;
+  /* end debug */
+  margin: 20px 10px;
+}
+
+nav {
+  /* debug */
+  width: 100%;
+  border: solid 1px black;
+  background-color: coral;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* end debug */
+}
+
+
+/* aside di sinistra */
+#left {
+  /* debug */
+  height: 600px;
+  border: solid 1px black;
+  background-color: darkgreen;
+  /* end debug */
+  width: 25%;
+  float: left;
+}
+
+.l-item {
+  /* debug */
+  height: 33.3333%;
+  border: solid 1px black;
+  /* end debug */
+}
+
+
+/* sezione centrale */
+#main-content {
+  /* debug */
+  background-color: darkred;
+  border: solid 1px black;
+  height: 800px;
+  /* end debug */
+  width: 38%;
+  float: left;
+  margin: 0 2%;
+}
+
+.s-item {
+  /* debug */
+  border: solid 1px black;
+  height: 25%;
+  /* end debug */
+}
+
+
+/* aside di destra */
+#right {
+  /* debug */
+  height: 300px;
+  border: solid 1px black;
+  background-color: lightblue;
+  /* end debug */
+  width: 33%;
+  float: left;
+}
+
+.r-item {
+  /* debug */
+  border: solid 1px black;
+  height: 50%;
+  /* end debug */
+}
+
+
+/* footer */
+footer {
+  /* debug */
+  height: 400px;
+  border: solid 1px black;
+  background-color: pink;
+  position: relative;
+  /* end debug */
+  margin: 20px 10px 0;
+}
+
+.f-item {
+  /* debug */
+  border: solid 1px black;
+  height: 70%;
+  /* end debug */
+  width: 20%;
+  float: left;
+}
+
+.f-item:nth-child(4) {
+  width: 40%;
+  float: left;
+}
+
+#contact {
+  /* debug */
+  border: solid 1px black;
+  height: 30%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* end debug */
+}
+
+.copy, .social {
+  /* debug */
+  width: 35%;
+  border: solid 1px black;
+  height: 100%;
+  /* end debug */
+}
+
+.copy {
+  float: left;
+}
+
+.social {
+  float: right;
+}
